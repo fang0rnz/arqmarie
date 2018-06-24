@@ -1,0 +1,130 @@
+@font-face {
+  font-family: adaywithoutsun;
+  src: url(../fonts/adaywithoutsun.otf);
+}
+@font-face {
+  font-family: upc;
+  src: url(../fonts/upcdl.ttf);
+}
+
+.header {
+  flex-direction: column !important;
+}
+
+* {
+  font-family: upc;
+}
+
+p {
+  font-size: 34px;
+  line-height: 1em;
+}
+
+.header-navigator {
+  font-size: 33px;
+}
+
+.logo {
+  min-width: 250px;
+  @media (min-width: 768px) {
+    min-width: 300px;
+  }
+}
+
+h2 {
+  font-family: upc;
+  font-size: 30px;
+  color: black solid;
+  // margin-left: 45%;
+  padding-top: 0px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+hr.divider {
+  width: 80%;
+  border: 0;
+  height: 1px;
+
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 400;
+}
+
+.section-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.section-title h2:before {
+  position: absolute;
+  background: #575757;
+  height: 2px;
+  width: 45px;
+  content: '';
+  bottom: 0;
+}
+.portfolio-menu button.mixitup-control-active {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 2px solid #4bcaff;
+  color: #4bcaff;
+  padding: 10px 15px;
+  font-weight: 700;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.portfolio-menu button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 2px solid transparent;
+  color: #515f67;
+  padding: 10px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.single-portfolio a {
+  display: block;
+  line-height: 0;
+  position: relative;
+  margin-top: 10%;
+}
+.single-portfolio a::before {
+  background: #000 none repeat scroll 0 0;
+  content: '';
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0.5);
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.single-portfolio:hover a::before {
+  opacity: 0.5;
+  transform: scale(1);
+}
+.single-portfolio a::after {
+  color: #fff;
+  content: 'nome';
+  font-size: 60px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+}
+.single-portfolio:hover a::after {
+  transform: scale(1);
+}
