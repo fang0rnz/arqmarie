@@ -1,0 +1,2 @@
+webpackJsonp([0x6c418da9accc],{223:function(e,t,u){"use strict";function c(e){return e&&e.__esModule?e:{default:e}}function n(e){return a.default.createElement("div",null,"Architecture")}t.__esModule=!0,t.default=n;var r=u(1),a=c(r);e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-architecture-js-ca6478a734feb1fd1bf6.js.map
